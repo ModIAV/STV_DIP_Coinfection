@@ -4,7 +4,7 @@ This code implements a multiscale model of influenza A virus and defective inter
 The code provided here allows to simulate the model with different MOI and MODIP conditions and to conduct the parameter estimation performed in [1]. 
 
 ## References
-1. Rüdiger D, Pelz L, Hein MD, Kupke SY, Reichl U. MMultiscale model of defective interfering particle replication for influenza A virus infection in animal cell culture. Unpublished.
+1. Rüdiger D, Pelz L, Hein MD, Kupke SY, Reichl U. Multiscale model of defective interfering particle replication for influenza A virus infection in animal cell culture. Unpublished.
 2. Laske T, Heldt FS, Hoffmann H, Frensing T, Reichl U. Modeling the intracellular replication of influenza A virus in the presence of defective interfering RNAs. Virus Research. 2016;213:90-99. https://www.doi.org/10.1016/j.virusres.2015.11.016
 3. Rüdiger D, Kupke SY, Laske T, Zmora P, Reichl U. Multiscale modeling of influenza A virus replication in cell cultures predicts infection dynamics for highly different infection conditions. PLOS Computational Biology. 2019;15(2):e1006819. https://www.doi.org/10.1371/journal.pcbi.1006819
 
