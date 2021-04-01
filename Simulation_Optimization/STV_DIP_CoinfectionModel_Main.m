@@ -452,7 +452,11 @@ end
 [p.Ex.ApoI, p.Ex.IntKapoi] = getApoI(p);
 
 %% Simulate the intracellular model once to obtain reaction names
-result.In.COI     = IQMPsimulate('InModel_MexFile', [0 1]); 
+if(p.CompileFlag)        
+    result.In.COI     = IQMPsimulate('InModel_MexFile', [0 1]); 
+else
+    result.In.COI     = IQMsimulate(p.InModel,'ode23s',[0 1], p.In.Ic.COI);
+end
 
 % divide variables and reactions for CoinfectionModel (as the reactions are also declared as variables)
 for j = 1 : length(result.In.COI.variables)
