@@ -1,0 +1,28 @@
+[Name]
+ExLev_MOIMODIPscatter_MOI30_MODIP3
+
+[Notes]
+Results of MOI/MODIP experiments, MOI 30, MODIP 3
+
+[Components]
+time, Cviab, VOnlyRel, VTot, DTot, pT, pI, pTa, pIa, T, I, Ta, Ia
+
+[Componentnotes]
+
+
+[Values]
+0.00e+00, 2.26e+06, NaN, NaN, NaN, 9.67e-01, 9.36e+01, 1.99e+00, 3.45e+00, 2.19e+04, 2.12e+06, 4.49e+04, 7.81e+04
+2.00e+00, 2.00e+06, 1.20e+05, 2.99e+07, 1.15e+07, 2.35e-01, 9.47e+01, 1.24e+00, 3.84e+00, 4.69e+03, 1.89e+06, 2.48e+04, 7.68e+04
+3.00e+00, NaN, 1.60e+05, 3.77e+07, 1.87e+07, 1.68e-01, 9.27e+01, 4.70e-01, 6.63e+00, NaN, NaN, NaN, NaN
+4.50e+00, NaN, 2.80e+07, 2.48e+09, 2.70e+09, 0.00e+00, 8.92e+01, 5.77e-01, 1.02e+01, NaN, NaN, NaN, NaN
+6.00e+00, 2.12e+06, 2.80e+07, 1.41e+10, 1.28e+10, 4.53e-01, 8.26e+01, 9.83e-01, 1.60e+01, 9.60e+03, 1.75e+06, 2.08e+04, 3.39e+05
+9.00e+00, 1.93e+06, 4.80e+07, 2.34e+10, 1.87e+10, 6.81e-02, 6.79e+01, 3.40e-01, 3.17e+01, 1.31e+03, 1.31e+06, 6.57e+03, 6.12e+05
+1.20e+01, 1.63e+06, 4.40e+07, 1.42e+10, 8.35e+09, 5.74e-02, 3.65e+01, 3.06e-01, 6.32e+01, 9.35e+02, 5.94e+05, 4.99e+03, 1.03e+06
+1.60e+01, 9.40e+05, 6.40e+07, 3.16e+10, 2.39e+10, 0.00e+00, 1.01e+01, 3.94e-02, 8.98e+01, 0.00e+00, 9.52e+04, 3.70e+02, 8.44e+05
+2.00e+01, 3.10e+05, 8.00e+06, 5.88e+10, 1.44e+10, 0.00e+00, 6.67e+00, 5.22e-02, 9.33e+01, 0.00e+00, 2.07e+04, 1.62e+02, 2.89e+05
+2.60e+01, 6.00e+04, 8.00e+06, 6.34e+10, 1.97e+10, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN
+3.20e+01, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN
+3.80e+01, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN
+4.50e+01, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN
+5.30e+01, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN
+6.10e+01, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN, NaN

@@ -1,0 +1,28 @@
+[Name]
+InLev_MOIMODIPscatter_MOI3_MODIP3
+
+[Notes]
+Results of MOI/MODIP experiments, MOI 3, MODIP 3
+
+[Components]
+time, RvSeg1, RvSeg9, RvSeg5, Rm1, Rm9, Rm5
+
+[Componentnotes]
+
+
+[Values]
+0.00e+00, 2.32e+02, 5.92e+01, 6.01e+02, 6.26e-01, NaN, 6.23e-01
+2.00e+00, 2.45e+02, 8.47e+01, 6.63e+02, 2.03e+02, 1.30e+02, 6.99e+02
+3.00e+00, 1.63e+03, 3.17e+03, 7.94e+03, 9.76e+02, 3.99e+03, 2.21e+04
+4.50e+00, 8.92e+03, 2.80e+04, 3.43e+04, 1.33e+03, 9.02e+03, 3.63e+04
+6.00e+00, 4.99e+04, 2.00e+05, 5.47e+04, 5.21e+02, 4.31e+03, 2.95e+04
+9.00e+00, 9.36e+04, 2.65e+05, 8.46e+04, 8.36e+01, 1.27e+03, 1.98e+04
+1.20e+01, 1.05e+05, 4.00e+05, 9.36e+04, 1.68e+02, 1.87e+03, 9.14e+03
+1.60e+01, 9.07e+04, 4.15e+05, 8.27e+04, 5.39e+01, 6.44e+02, 3.86e+03
+2.00e+01, 3.79e+04, 1.78e+05, 7.00e+04, 1.01e+02, 8.35e+02, 2.15e+03
+2.60e+01, NaN, NaN, NaN, NaN, NaN, NaN
+3.20e+01, NaN, NaN, NaN, NaN, NaN, NaN
+3.80e+01, NaN, NaN, NaN, NaN, NaN, NaN
+4.50e+01, NaN, NaN, NaN, NaN, NaN, NaN
+5.30e+01, NaN, NaN, NaN, NaN, NaN, NaN
+6.10e+01, NaN, NaN, NaN, NaN, NaN, NaN
