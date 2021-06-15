@@ -1,5 +1,5 @@
 ********** MODEL NAME
-Ruediger, Laske und Heldt 2021 - Defective Interfering RNA replication - Segment 1
+Ruediger, Laske and Heldt 2021 - Defective Interfering RNA replication - Segment 1 (DI244)
 
 ********** MODEL NOTES
 This model is based on the model of intracellular influenza A virus replication in a mammalian cell described in the article:
@@ -24,7 +24,7 @@ References:
 [8] Spirin AS, Ribosome structure and protein biosynthesis, 1986, Menlo Park (California), Benjamin/Cummings, 414 p.
 [9] Vreede et al., J. Virol., 2004, Vol 78, No 17, p9568-9572
 [10] Wakefield and Brownlee, Nucleic Acids Res., 1989, Vol 17, No 21, p8569-8580
-[11] Hutchinson et. al., J. Gen. Virol., Feb 2010, Vol. 91, Pt. 2, p313-328
+[11] Dimmock et al., J. Virol. 2008, Vol. 82, No. 17, p8570-8578
 
 last revised: 2018/10/02
 
@@ -150,7 +150,7 @@ Lm5 = 1540              %nucleotides  length of segment 5's mRNA encoding NP [4]
 Lm6 = 1392              %nucleotides  length of segment 6's mRNA encoding NA [4]
 Lm7 = 1005              %nucleotides  length of segment 7's unspliced mRNA encoding M1 [4]
 Lm8 = 868               %nucleotides  length of segment 8's unspliced mRNA encoding NEP [4]
-Lm9 = 373
+Lm9 = 373               %nucleotides  extrapolated from Lv9
 
 Lv1 = 2341              %nucleotides  length of segment 1's vRNA and cRNA encoding PB2 [4]
 Lv2 = 2341              %nucleotides  length of segment 2's vRNA and cRNA encoding PB1 [4]
@@ -161,24 +161,20 @@ Lv6 = 1413              %nucleotides  length of segment 6's vRNA and cRNA encodi
 Lv7 = 1027              %nucleotides  length of segment 7's vRNA and cRNA encoding M1 and M2 [4]
 Lv8 = 890               %nucleotides  length of segment 8's vRNA and cRNA encoding NEP and NS2 [4]
 
-Lv9  = 395              %nucleotides  length of the DI-RNA of segment 3 (estimated average length [11])
-Fadv = 3.65             %(-)  replication advantage, i.e., factor with which the cRNA synthesis of the DI--RNA exceeds the synthesis of its full--length segment (estimated as (Lv3/Lv9-1))
+Lv9  = 395              %nucleotides  length of DI244 cRNA and vRNA [11]
+Fadv = 3.65             %-  replication advantage, i.e., factor with which the cRNA synthesis of the DI--RNA exceeds the synthesis of its full--length segment (estimated as (Lv3/Lv9-1))
 
 Fspl7 = 0.02            %-  fraction of spliced M2 mRNAs compared to total mRNAs of segment 7 (based on the ratio of M1 to M2 in a virion)
 Fspl8 = 0.125           %-  fraction of spliced NEP mRNAs compared to total mRNAs of segment 8 [7]
 
-N_Rdrp = 45             %molecules/virion  number of polymerase molecules in a virion [4]
 N_Ha   = 500            %molecules/virion  number of HA molecules in a virion [4] 
-N_Np   = 1000           %molecules/virion  number of NP molecules in a virion [4]
 N_Na   = 100            %molecules/virion  number of NA molecules in a virion [4] 
 N_M1   = 3000           %molecules/virion  number of M1 molecules in a virion [4]
 N_M2   = 40             %molecules/virion  number of M2 molecules in a virion [4]
-N_Nep  = 165            %molecules/virion  number of NEP molecules in a virion [4]
 
 BtotHi  = 150           %sites  total amount of high-affinity binding sites on the cell surface [5]
 BtotLo  = 1000          %sites  total amount of low-affinity binding sites on the cell surface [5]
 NnucNp  = 24            %nucleotides  number of nucleotides bound by one NP molecule [6]
-NnucM1  = 200           %nucleotides  number of nucleotides bound by one M1 molecules [10]
 NnucNep = 1700          %nucleotides  number of nucleotides bound by one NEP molecule (NEP is not required in stoichiometric quantities as nuclear export occurs in the presence of much reduced or even undetectable levels of NEP [6]. We, thus, assume that one NEP per vRNP is sufficient to facilitate nuclear export.)
 Drib    = 160           %nucleotides  distance between two adjacent ribosomes on an mRNA [2]
 
@@ -211,16 +207,16 @@ kDegRnp   = 0.09        %1/h  degradation rate of RNPs
 
 kCmplx = 1              %1/(h*molecule^7) formation rate of vRNP complexes prior to packaging (we assume this step occurs fast)
 
-kRel  = 1270          %virions/(h*molecule)  release rate of progeny virions from the cell (includes all steps of transport to the cell membrane and budding)
-KvRel = 1250              %virions  components for this number of complete virions must be present in the cell to reach half the maximum release rate
+kRel  = 1270            %virions/(h*molecule)  release rate of progeny virions from the cell (includes all steps of transport to the cell membrane and budding)
+KvRel = 1250            %virions  components for this number of complete virions must be present in the cell to reach half the maximum release rate
 
-Kr = 2e6
+Kr = 2e6                %molecules  mRNA synthesis inhibition constant
 
-kRelRed = 0.12
+kRelRed = 0.12          %-  reduction of infectious release
 
-Fm = 0.2
+Fm = 0.2                %-  segment specific reduction of polymerase mRNA synthesis
 
-DF = 0                  % DIP infection flag, used to prevent numerical instabilities in only STV infected cells producing negative DIPs
+DF = 0                  % DIP infection flag, used to prevent numerical instabilities in STV-only infected cells producing negative DIPs
 
 ********** MODEL VARIABLES
 kDisHi  = kAttHi/kEqHi                %1/h  dissociation rate of virions from the high-affinity binding sites
@@ -239,7 +235,6 @@ RcSeg9 = Rc9 + RcRdrp9 + Cp9    %total amount of intracellular DI--cRNA
 
 MrnaTotal = Rm1 + Rm2 + Rm3 + Rm4 + Rm5 + Rm6 + Rm7 + Rm8 + Rm9       %total amount of intracellular mRNA
 
-RelProt = (P_Rdrp/(KvRel*N_Rdrp+P_Rdrp)) * (P_Ha/(KvRel*N_Ha+P_Ha)) * (P_Np/(KvRel*N_Np+P_Np)) *  (P_Na/(KvRel*N_Na+P_Na)) * (P_M1/(KvRel*N_M1+P_M1)) * (P_M2/(KvRel*N_M2+P_M2)) * (P_Nep/(KvRel*N_Nep+P_Nep))
 RelV = kRel*(VcytCmplx/(KvRel+VcytCmplx))
 RelD = kRel*(DcytCmplx/(KvRel+DcytCmplx))
 
