@@ -175,6 +175,7 @@ N_M2   = 40             %molecules/virion  number of M2 molecules in a virion [4
 BtotHi  = 150           %sites  total amount of high-affinity binding sites on the cell surface [5]
 BtotLo  = 1000          %sites  total amount of low-affinity binding sites on the cell surface [5]
 NnucNp  = 24            %nucleotides  number of nucleotides bound by one NP molecule [6]
+NnucM1  = 200           %nucleotides  number of nucleotides bound by one M1 molecules [10]
 NnucNep = 1700          %nucleotides  number of nucleotides bound by one NEP molecule (NEP is not required in stoichiometric quantities as nuclear export occurs in the presence of much reduced or even undetectable levels of NEP [6]. We, thus, assume that one NEP per vRNP is sufficient to facilitate nuclear export.)
 Drib    = 160           %nucleotides  distance between two adjacent ribosomes on an mRNA [2]
 
