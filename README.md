@@ -16,7 +16,7 @@ The code provided here allows to simulate the model with different MOI and MODIP
 ## Optional programs (for faster simulation and optimization)
 - C/C++ compiler: Creates MEX-files for a faster simulation with the SB Toolbox (e.g. MinGW 6.3 C/C++ for Windows or GCC for Linux)
 
-- CVODE solver from SUNDIALS: Simulates MEX-files. Cohen and Hindmarsh (Computers in Physics, 1996), available at https://computation.llnl.gov/projects/sundials/sundials-software
+- CVODE solver from SUNDIALS: Simulates MEX-files. Cohen and Hindmarsh (Computers in Physics, 1996), available at https://computing.llnl.gov/projects/sundials/sundials-software
 
 ## Running the code and main options
 The function `STV_DIP_CoinfectionModel_Main.m` is used for model simulation and parameter estimation. A model simulation can be done by running this script. The following main options are available:
